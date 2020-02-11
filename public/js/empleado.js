@@ -25,6 +25,7 @@ new Vue({
    		categoria:'',
    		fecha_nacimiento:'',
    		sexo:'',
+         usuario:'',
    	},
 
    	created:function(){
@@ -55,7 +56,8 @@ new Vue({
    				fecha_ingreso:this.fecha_ingreso,
    				categoria:this.categoria,
    				fecha_nacimiento:this.fecha_nacimiento,
-   				sexo:this.sexo
+   				sexo:this.sexo,
+               usuario:this.usuario
    			};
 
    			this.$http.post(urlEm,c)
@@ -90,6 +92,7 @@ new Vue({
    				this.categoria=json.data.categoria
    				fecha_nacimiento=json.data.fecha_nacimiento
    				sexo=json.data.sexo
+               usuario=json.data.usuario
 
    				this.id_cc=json.data.id_empleado;
 
@@ -110,7 +113,8 @@ new Vue({
    				fecha_ingreso:this.fecha_ingreso,
    				categoria:this.categoria,
    				fecha_nacimiento:this.fecha_nacimiento,
-   				sexo:this.sexo
+   				sexo:this.sexo,
+               usuario:this.usuario
    			};
 
    			this.$http.patch(urlEm + '/' + this.id_cc,kkk)
@@ -132,6 +136,7 @@ new Vue({
    			this.categoria='';
    			this.fecha_nacimiento='';
    			this.sexo='';
+            this.usuario='';
 
 		},
 
@@ -148,6 +153,7 @@ new Vue({
 				this.categoria='';
 				this.fecha_nacimiento='';
 				this.sexo='';
+            this.usuario='';
 				$('#add_c').modal('hide');
 		}
 

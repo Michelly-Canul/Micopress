@@ -22,6 +22,7 @@ class Empleado extends Model
     	'fecha_ingreso',
     	'categoria',
     	'fecha_nacimiento',
-    	'sexo'
+    	'sexo',
+        'usuario'
     ];
 }

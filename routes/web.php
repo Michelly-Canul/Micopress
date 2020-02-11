@@ -11,11 +11,6 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
-
-
 //vistas
 Route::get('prestamos', function () {
     return view('prestamo.prestamos');
@@ -40,6 +35,10 @@ Route::get('empleado',function () {
 Route::get('periodo',function () {
 	return view('periodo/periodos');
 });
+Route::post('validar','AccesoController@validar');
+Route::view('/','login.login');
+
+
 
 
 

@@ -11,6 +11,7 @@
 			<thead>
 				<th>No.Empleado</th>
 				<th>Contraseña</th>
+				<th>Usuario</th>
 				<th>nombre</th>
 				<th>apellido Paterno</th>
 				<th>apellido Materno</th>
@@ -26,6 +27,7 @@
 				<tr v-for="(c,index) in empleados">
 					<td>@{{index+1}}</td>
 					<td>@{{c.password}}</td>
+					<td>@{{c.usuario}}</td>
 					<td>@{{c.nombre}}</td>
 					<td>@{{c.apellido_p}}</td>
 					<td>@{{c.apellido_m}}</td>
@@ -59,6 +61,8 @@
 
 					<div class="modal-body">
 						<input type="text" placeholder="Contraseña" v-model="password" class="form-control">
+
+						<input type="text" placeholder="Usuario" v-model="usuario" class="form-control" >
 
 						<input type="text" placeholder="Nombre" v-model="nombre" class="form-control">
 

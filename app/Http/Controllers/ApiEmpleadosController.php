@@ -37,6 +37,7 @@ class ApiEmpleadosController extends Controller
         $empleado->categoria=$request->get('categoria');
         $empleado->fecha_nacimiento=$request->get('fecha_nacimiento');
         $empleado->sexo=$request->get('sexo');
+        $empleado->usuario=$request->get('usuario');
 
         $empleado->save();
     }
@@ -75,6 +76,7 @@ class ApiEmpleadosController extends Controller
         $empleado->categoria=$request->get('categoria');
         $empleado->fecha_nacimiento=$request->get('fecha_nacimiento');
         $empleado->sexo=$request->get('sexo');
+        $empleado->usuario=$request->get('usuario');
 
         $empleado->update();
     }
