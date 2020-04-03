@@ -1,15 +1,15 @@
-@extends('layouts.admin')
+@extends('layouts.administrador')
 
 @section('contenido')
 
 
-
+<a class="waves-effect waves-light btn modal-trigger" href="#modal1">Modal</a>
 
 
 <div id='empleado'>
 	<div class="container">
 
-		<button class="btn btn-success" @click="showModal()">Agregar</button>
+		<button class="modal-close waves-effect waves-green btn-flat" @click="">Agregar</button>
 		<table class="table table-striped table-responsive">
 			<thead>
 				<th>No.Empleado</th>

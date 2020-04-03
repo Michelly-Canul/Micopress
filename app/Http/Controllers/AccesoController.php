@@ -27,7 +27,7 @@ class AccesoController extends Controller
             $user=$resp[0]->nombre.' '.$resp[0]->apellido_p.' '.$resp[0]->apellido_m;
             Session::put('usuario',$user);
             Session::put('id_empleado',$resp[0]->id_empleado);
-            return Redirect::to('prestamos');
+            return Redirect::to('administrador');
             // Sesion::put('rol',$resp[0]->rol->rol);
             // Sesion::put('foto',$resp[0]->foto);
 

@@ -6,7 +6,7 @@
 	<div class="container">
 		@{{nom}}
 	<!-- <span class="btn btn-success" @click="showModal()">Agregar</span> -->
-		<button class="btn btn-primary" @click="showModal()">Agregar</button>
+		<button class="btn btn-primary" @click="showModal()">Agregar Nuevo</button>
 		<table class="table table-striped table-responsive">
 			<thead>
 				<th>No. Usuario</th>

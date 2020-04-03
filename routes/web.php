@@ -35,12 +35,18 @@ Route::get('empleado',function () {
 Route::get('periodo',function () {
 	return view('periodo/periodos');
 });
+
+Route::get('administrador',function () {
+	return view('layouts/administrador');
+});
 Route::post('validar','AccesoController@validar');
-Route::view('/','login.login');
+// Route::view('/','login.login');
+Route::view('/','login.loginm');
 
 
 
-
+Route::view('index','carreras');
+Route::apiResource('apiCarrera','ApiCarreraController');
 
 
 
@@ -55,3 +61,8 @@ Route::apiResource('apiAbo','ApiAbonosController');
 Route::apiResource('apiEm','ApiEmpleadosController');
 
 Route::apiResource('apiPeri','ApiPeriodosController');
+
+
+
+Route::apiResource('masc','ApiMascotasController');
+
